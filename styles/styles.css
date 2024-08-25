@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #DAA520;
+    --secondary-color: #1f0303af;
+    --accent-color:#BB9D85;
+    --background-color: #f7f4e7 ;
+    --cabecalho-color:#FEF8D6;
+    --box-color: #faf3f069;
+    --text-color: #333333;
+    --color-logo: #fcdd89;
+
+    --fonte-primaria: 'Lato', sans-serif;
+    --fonte-secundaria: 'Monteserrat', sans-serif;
+    --fonte-terciaria: 'Krona', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--background-color);
+}
+
+.cabecalho {
+    width: 100%;
+    position: fixed;
+    background: var(--cabecalho-color);
+    
+}
+
+.cabecalho__menu__lista {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    gap: 5rem;
+    background-color: var(--accent-color);
+    font-family: var(--fonte-secundaria);
+    color: var(--cabecalho-color);
+    font-size: 1.2rem;
+}
+
+.cabecalho__logo::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.imagem__logo {
+    float: left;
+    margin: 0.5% 0.3% 0.5% 15%;
+    height: 60%;
+    width: 20%;
+    border-radius: 2%;
+    }
+
+.titulo__geral {
+    padding-top: 6.5%;
+    font-family: var(--fonte-primaria);
+    color: var(--secondary-color);
+    text-align: left;
+    font-size: 3.5rem;
+}
+
+.subtitulo__geral {
+    font-family: var(--fonte-primaria);
+    color: var(--secondary-color);
+    text-align: left;
+    font-size: 1.7rem;
+}
+
+.subtitulo__caixa {
+    font-family: 'Lato', sans-serif;
+    font-weight: medium;
+    color: var(--secondary-color);
+    text-align: left;
+    text-decoration-line: underline;
+    font-size: 1.7rem;
+}
+
+.topo__vazio {
+    padding: 15% 10% 0% 10%;
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.apresentacao__inicial {
+    padding: 1% 10% 1% 5%;
+    margin: 1% 15% 0% 20%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.329);
+    border-radius: 8px;
+    background-color: var(--box-color);
+}
+
+.apresentacao__proposta {
+    padding: 1% 10% 1% 5%;
+    margin: 0% 15% 0% 20%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.329);
+    border-radius: 8px;
+    background-color: var(--box-color);
+}
+
+.apresentacao__historia {
+    padding: 1% 10% 1% 5%;
+    margin: 0% 15% 0% 20%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.329);
+    border-radius: 8px;
+    background-color: var(--box-color);
+}
+
+.conteudo__titulo {
+    font-family: var(--fonte-secundaria);
+    color: var(--primary-color);
+    font-style:normal;
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+.conteudo__paragrafo {
+    margin: 1% 3% 0% 1%;
+    font-family: var(--fonte-secundaria);
+    color: var(--text-color);
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.conteudo__proposta__lista {
+    margin: 1% 1% 0% 5%;
+    list-style-type: disc;
+    list-style-position: inside;
+    font-family: var(--fonte-secundaria);
+    color: var(--text-color);
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.realizacoes {
+    padding: 1% 3% 1% 3%;
+    margin: 0% 15% 0% 20%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.329);
+    border-radius: 8px;
+    background-color: var(--box-color);
+}
+
+.video-pecas {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    margin: 1%;
+    
+}
+
+.video-container iframe {
+    width: 400px;
+    height: 315px;
+}
+
+.conteudo__paragrafo__video {
+    margin: 1% 1% 0% 1%;
+    font-family: var(--fonte-secundaria);
+    color: var(--text-color);
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.text-container {
+    flex: 50%;
+    margin: 1% 1% 1% 3%;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho__menu__lista {
+        gap: 0.3rem;
+        display: flex;
+        font-size: 1rem;
+    }
+    .apresentacao {
+        display: block;
+        position: inherit;
+    }
+
+      .conteudo__titulo {
+            font-size: 1rem;
+        }
+    .conteudo__proposta__lista {
+            font-size: 0.8rem;
+        }
+    .conteudo__paragrafo {
+            font-size: 0.8rem;
+        }
+    .conteudo__paragrafo__video {
+            font-size: 1rem;
+        }
+    }
+
+
