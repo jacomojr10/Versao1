@@ -64,9 +64,10 @@ body {
 
 .cabecalho__menu__lista {
     display: flex;
+    text-decoration: none;
     list-style: none;
     justify-content: center;
-    gap: 5rem;
+    gap: 3.5rem;
     background-color: var(--secondary-color);
     text-decoration: none;
     font-family: var(--fonte-secundaria);
@@ -182,6 +183,7 @@ body {
         position: inherit;
     }
     .titulo__geral {
+        padding-top: 4%;
         font-size: 1.5rem;
     }
 
@@ -190,8 +192,9 @@ body {
     }
 
     .cabecalho__menu__lista {
-        gap: 0.3rem;
         display: flex;
+        justify-content: space-between;
+        padding: 0.3% 15% 0.5% 0;
         font-size: 0.8rem;
     }
     .apresentacao {
@@ -206,15 +209,15 @@ body {
             font-size: 1rem;
         }
     
-        .conteudo__proposta__lista {
+    .conteudo__proposta__lista {
             font-size: 0.8rem;
         }
     
-        .conteudo__paragrafo {
+    .conteudo__paragrafo {
             font-size: 0.8rem;
         }
     
-        .conteudo__paragrafo__video {
+    .conteudo__paragrafo__video {
             font-size: 0.7rem;
         }
     
