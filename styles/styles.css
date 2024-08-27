@@ -171,7 +171,7 @@ body {
 }
 
 .text-container {
-    flex: 50%;
+    flex: 30%;
     margin: 1% 0 1% 1%;
     text-align: center;
 }
@@ -201,18 +201,28 @@ body {
     .topo__vazio {
         padding: 1% 10% 0% 10%;
     }
-        .conteudo__titulo {
+        
+    .conteudo__titulo {
             font-size: 1rem;
         }
-    .conteudo__proposta__lista {
+    
+        .conteudo__proposta__lista {
             font-size: 0.8rem;
         }
-    .conteudo__paragrafo {
+    
+        .conteudo__paragrafo {
             font-size: 0.8rem;
         }
-    .conteudo__paragrafo__video {
-            font-size: 0.8rem;
+    
+        .conteudo__paragrafo__video {
+            font-size: 0.7rem;
         }
+    
+    .video-container iframe {
+        width: 200px;
+        height: 157.5px;       
     }
 
+    }
+    
 
