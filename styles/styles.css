@@ -177,17 +177,31 @@ body {
 }
 
 @media (max-width: 1200px) {
-    .cabecalho__menu__lista {
-        gap: 0.3rem;
-        display: flex;
-        font-size: 1rem;
-    }
-    .apresentacao {
+    .cabecalho {
         display: block;
         position: inherit;
     }
+    .titulo__geral {
+        font-size: 1.5rem;
+    }
 
-      .conteudo__titulo {
+    .subtitulo__geral {
+        font-size: 0.8rem;
+    }
+
+    .cabecalho__menu__lista {
+        gap: 0.3rem;
+        display: flex;
+        font-size: 0.8rem;
+    }
+    .apresentacao {
+        display: flex;
+    }
+
+    .topo__vazio {
+        padding: 1% 10% 0% 10%;
+    }
+        .conteudo__titulo {
             font-size: 1rem;
         }
     .conteudo__proposta__lista {
@@ -197,7 +211,7 @@ body {
             font-size: 0.8rem;
         }
     .conteudo__paragrafo__video {
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
     }
 
