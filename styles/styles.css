@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --primary-color: #DAA520;
+    --primary-color: #b6870f;
     --secondary-color: #1f0303af;
-    --accent-color:#BB9D85;
+    --accent-color:#6e4f35;
     --background-color: #f7f4e7 ;
-    --cabecalho-color:#FEF8D6;
+    --cabecalho-color:#FFF8D7;
     --box-color: #faf3f069;
     --text-color: #333333;
     --color-logo: #fcdd89;
@@ -31,18 +31,6 @@ body {
     position: fixed;
     background: var(--cabecalho-color);
     
-}
-
-.cabecalho__menu__lista {
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    justify-content: center;
-    gap: 5rem;
-    background-color: var(--accent-color);
-    font-family: var(--fonte-secundaria);
-    color: var(--cabecalho-color);
-    font-size: 1.2rem;
 }
 
 .cabecalho__logo::after {
@@ -74,12 +62,23 @@ body {
     font-size: 1.7rem;
 }
 
+.cabecalho__menu__lista {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 5rem;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    color: var(--cabecalho-color);
+    font-size: 1.1rem;
+}
+
 .subtitulo__caixa {
-    font-family: 'Lato', sans-serif;
-    font-weight: medium;
+    font-family: var(--fonte-primaria);
+    /*font-weight: medium;*/
     color: var(--secondary-color);
     text-align: left;
-    text-decoration-line: underline;
     font-size: 1.7rem;
 }
 
@@ -95,24 +94,24 @@ body {
 }
 
 .apresentacao__inicial {
-    padding: 1% 10% 1% 5%;
-    margin: 1% 15% 0% 20%;
+    padding: 1% 5% 1% 5%;
+    margin: 1% 17% 0% 17%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.329);
     border-radius: 8px;
     background-color: var(--box-color);
 }
 
 .apresentacao__proposta {
-    padding: 1% 10% 1% 5%;
-    margin: 0% 15% 0% 20%;
+    padding: 1% 5% 1% 5%;
+    margin: 0% 17% 0% 17%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.329);
     border-radius: 8px;
     background-color: var(--box-color);
 }
 
 .apresentacao__historia {
-    padding: 1% 10% 1% 5%;
-    margin: 0% 15% 0% 20%;
+    padding: 1% 5% 1% 5%;
+    margin: 0% 17% 0% 17%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.329);
     border-radius: 8px;
     background-color: var(--box-color);
@@ -120,7 +119,7 @@ body {
 
 .conteudo__titulo {
     font-family: var(--fonte-secundaria);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-style:normal;
     text-align: left;
     font-size: 2.5rem;
@@ -145,8 +144,8 @@ body {
 }
 
 .realizacoes {
-    padding: 1% 3% 1% 3%;
-    margin: 0% 15% 0% 20%;
+    padding: 1% 5% 1% 5%;
+    margin: 0% 17% 0% 17%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.329);
     border-radius: 8px;
     background-color: var(--box-color);
@@ -155,9 +154,7 @@ body {
 .video-pecas {
     display: flex;
     flex-wrap: wrap;
-    padding: 1%;
-    margin: 1%;
-    
+    padding: 3% 0 0 0;
 }
 
 .video-container iframe {
@@ -166,16 +163,16 @@ body {
 }
 
 .conteudo__paragrafo__video {
-    margin: 1% 1% 0% 1%;
+    margin: 1% 0% 0% 1%;
     font-family: var(--fonte-secundaria);
     color: var(--text-color);
-    text-align: justify;
+    text-align: left;
     font-size: 1rem;
 }
 
 .text-container {
     flex: 50%;
-    margin: 1% 1% 1% 3%;
+    margin: 1% 0 1% 1%;
     text-align: center;
 }
 
