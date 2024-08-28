@@ -23,6 +23,8 @@
 
 body {
     box-sizing: border-box;
+    width: 100%;
+    max-width: 1080px;
     background-color: var(--background-color);
 }
 
@@ -30,8 +32,7 @@ body {
     width: 100%;
     position: fixed;
     background: var(--cabecalho-color);
-    
-}
+    }
 
 .cabecalho__logo::after {
     content: "";
@@ -41,78 +42,76 @@ body {
 
 .imagem__logo {
     float: left;
-    margin: 0.5% 0.3% 0.5% 15%;
-    height: 60%;
+    margin: 0.5% 0.3% 0.5% 13%;
     width: 20%;
     border-radius: 2%;
     }
 
 .titulo__geral {
-    padding-top: 6.5%;
+    padding-top: 6%;
     font-family: var(--fonte-primaria);
     color: var(--secondary-color);
     text-align: left;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 .subtitulo__geral {
     font-family: var(--fonte-primaria);
     color: var(--secondary-color);
     text-align: left;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
 }
 
 .cabecalho__menu__lista {
     display: flex;
-    text-decoration: none;
-    list-style: none;
-    justify-content: center;
-    gap: 3.5rem;
+    padding: 0 12% 0 13%;
+    gap: 1.3rem;
+    line-height: 1.7rem;
     background-color: var(--secondary-color);
     text-decoration: none;
     font-family: var(--fonte-secundaria);
-    color: var(--cabecalho-color);
-    font-size: 1.1rem;
+    color: #FFFF;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 .subtitulo__caixa {
     font-family: var(--fonte-primaria);
-    /*font-weight: medium;*/
     color: var(--secondary-color);
     text-align: left;
-    font-size: 1.7rem;
+    font-size: 1rem;
 }
 
 .topo__vazio {
-    padding: 15% 10% 0% 10%;
+    padding: 20% 10% 0% 10%;
 }
 
 .apresentacao{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    justify-content: space-between;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .apresentacao__inicial {
-    padding: 1% 5% 1% 5%;
-    margin: 1% 17% 0% 17%;
+    padding: 1% 3% 1% 3%;
+    margin: 1% 3% 0% 16%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.329);
     border-radius: 8px;
     background-color: var(--box-color);
 }
 
 .apresentacao__proposta {
-    padding: 1% 5% 1% 5%;
-    margin: 0% 17% 0% 17%;
+    padding: 1% 3% 1% 3%;
+    margin: 1% 3% 0% 16%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.329);
     border-radius: 8px;
     background-color: var(--box-color);
 }
 
 .apresentacao__historia {
-    padding: 1% 5% 1% 5%;
-    margin: 0% 17% 0% 17%;
+    padding: 1% 3% 1% 3%;
+    margin: 1% 3% 0% 16%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.329);
     border-radius: 8px;
     background-color: var(--box-color);
@@ -123,7 +122,7 @@ body {
     color: var(--secondary-color);
     font-style:normal;
     text-align: left;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
 .conteudo__paragrafo {
@@ -131,7 +130,7 @@ body {
     font-family: var(--fonte-secundaria);
     color: var(--text-color);
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
 .conteudo__proposta__lista {
@@ -141,12 +140,12 @@ body {
     font-family: var(--fonte-secundaria);
     color: var(--text-color);
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
-.realizacoes {
-    padding: 1% 5% 1% 5%;
-    margin: 0% 17% 0% 17%;
+.nosso__repertorio {
+    padding: 1% 3% 1% 3%;
+    margin: 1% 3% 0% 16%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.329);
     border-radius: 8px;
     background-color: var(--box-color);
@@ -159,8 +158,8 @@ body {
 }
 
 .video-container iframe {
-    width: 400px;
-    height: 315px;
+    width: 350px;
+    height: 275px;
 }
 
 .conteudo__paragrafo__video {
@@ -168,7 +167,7 @@ body {
     font-family: var(--fonte-secundaria);
     color: var(--text-color);
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .text-container {
@@ -177,7 +176,7 @@ body {
     text-align: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1080px) {
     .cabecalho {
         display: block;
         position: inherit;
@@ -194,11 +193,12 @@ body {
     .cabecalho__menu__lista {
         display: flex;
         justify-content: space-between;
-        padding: 0.3% 15% 0.5% 0;
+        padding: 0.3% 5% 0.5% 0;
         font-size: 0.8rem;
     }
     .apresentacao {
         display: flex;
+        width: 100%;
     }
 
     .topo__vazio {
