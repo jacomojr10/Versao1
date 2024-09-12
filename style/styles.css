@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --secondary-color: #1f0303af;
+    --box-color: #faf3f08f;
+    --text-color: #FFFF;
+    
+    --fonte-primaria: 'Lato', sans-serif;
+    --fonte-secundaria: 'Monteserrat', sans-serif;
+    --fonte-terciaria: 'Krona', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.cabecalho {
+   position: fixed;
+}
+
+.titulo__geral {
+    padding: 4% 0 0.5% 13%;
+    font-family: var(--fonte-primaria);
+    color: #FFFF;
+    font-size: 2.5rem;
+}
+
+.subtitulo__geral {
+    padding: 0.1% 0 0.5% 13%;
+    font-family: var(--fonte-primaria);
+    color: #FFFF;
+    font-size: 1.2rem;
+}
+
+.menu__lista {
+    background-color: #730202;
+    bottom: 0;
+}
+
+.menu__lista nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style-type: none;
+    line-height: 1rem;
+}
+
+nav ul li a { 
+    line-height: 1rem;
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    color: #FFFF;
+    font-size: 0.9rem;
+    font-weight: 400;
+        
+    }
+
+.carousel {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    color: #FFF;
+    padding: 13% 5% 0 10%;
+}
+
+
+.subtitulo__caixa {
+    font-family: var(--fonte-primaria);
+    color: var(--secondary-color);
+    text-align: left;
+    font-size: 1rem;
+}
+
+.content-section {
+    transition: opacity 3s ease;
+    min-width: auto;
+    height: 40%;
+    display: none;
+    flex-direction: column;
+    justify-content: top;
+    align-items: flex-start;
+    padding: 1% 3% 0% 1%;
+    background-color: rgba(250, 235, 215, 0.192);
+}
+
+.active {
+    display: flex;
+    transform: translateX(10%);
+}
+
+.content-section.exiting {
+    transform: translateX(10%);
+}
+
+.conteudo__titulo {
+    font-family: var(--fonte-secundaria);
+    color: var(--text-color);
+    font-style:normal;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.conteudo__paragrafo {
+    margin: 1% 3% 0% 1%;
+    font-family: var(--fonte-secundaria);
+    color: var(--text-color);
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.conteudo__proposta__lista {
+    margin: 1% 1% 0% 5%;
+    list-style-type: disc;
+    list-style-position: inside;
+    font-family: var(--fonte-secundaria);
+    color: var(--text-color);
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+
+.video-pecas {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 0 0 0;
+}
+
+.video-container iframe {
+    width: 350px;
+    height: 275px;
+}
+
+.conteudo__paragrafo__video {
+    margin: 1% 0% 0% 1%;
+    font-family: var(--fonte-secundaria);
+    color: var(--text-color);
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.text-container {
+    flex: 30%;
+    margin: 1% 0 1% 1%;
+    text-align: center;
+}
+
+@media (max-width: 1080px) {
+
+    .cabecalho {
+        display: block;
+        position: relative;
+        
+    }
+    .titulo__geral {
+        padding: 4% 0 0.5% 7%;
+        font-size: 1.5rem;
+    }
+
+    .subtitulo__geral {
+        font-size: 0.8rem;
+        padding: 0.1% 0 0.5% 7%;
+    }
+
+    .cabecalho__menu__lista {
+        display: flex;
+        justify-content: left;
+        font-size: 0.7rem;
+        gap:1.5rem;
+        padding: 0% 0.5% 0.5% 7%;
+        line-height: 0.8rem;
+    }
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        position: relative;
+        padding: auto 10% 0 7%;
+    }
+      
+    .conteudo__titulo {
+            font-size: 1rem;
+        }
+    
+    .conteudo__proposta__lista {
+            font-size: 0.8rem;
+        }
+    
+    .conteudo__paragrafo {
+            font-size: 0.8rem;
+        }
+    
+    .conteudo__paragrafo__video {
+            font-size: 0.7rem;
+        }
+    
+    .video-container iframe {
+        width: 200px;
+        height: 157.5px;       
+    }
+
+    }
+    
+
