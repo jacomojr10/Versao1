@@ -160,11 +160,28 @@ nav ul li a {
     .cabecalho {
         display: block;
         position: relative;
+      
+        .menu__lista nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            list-style-type: none;
+            line-height: 1rem;
+        }
         
+        nav ul li a { 
+            line-height: 1rem;
+            text-decoration: none;
+            font-family: var(--fonte-secundaria);
+            color: #FFFF;
+            font-size: 0.5rem;
+            font-weight: 200;
+
+
     }
     .titulo__geral {
-        padding: 4% 0 0 7%;
-        font-size: 2.5rem;
+        padding: 2% 0 0 7%;
+        font-size: 1.5rem;
     }
 
     .subtitulo__geral {
@@ -172,24 +189,9 @@ nav ul li a {
         padding: 0.1% 0 0.5% 7%;
     }
 
-    .cabecalho__menu__lista {
-        display: flex;
-        justify-content: left;
-        font-size: 0.7rem;
-        gap:1.5rem;
-        padding: 0% 0.5% 0.5% 7%;
-        line-height: 0.8rem;
-    }
-    .apresentacao {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        position: relative;
-        padding: auto 10% 0 7%;
-    }
-      
+        
     .conteudo__titulo {
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
     
     .conteudo__proposta__lista {
@@ -197,16 +199,18 @@ nav ul li a {
         }
     
     .conteudo__paragrafo {
-            font-size: 0.8rem;
+            font-size: 0.5rem;
         }
     
     .conteudo__paragrafo__video {
             font-size: 0.7rem;
         }
     
-    .video-container iframe {
-        width: 200px;
-        height: 157.5px;       
+        .video-container iframe {
+            width: 90%;
+            height: 90%;
+            
+        }      
     }
 
     }
